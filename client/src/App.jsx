@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import './App.css'
-import Demo from './features/demo/Demo'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './features/Auth/Login';
+import Signup from './features/Auth/Signup';
+import ProfileOptions from './components/Profile';
+import AttendancePage from './components/AttendancePage';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div>
-      <h1 className="text-5xl text-red-300">Hello</h1>
-      <Demo/>
-    </div>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<AttendancePage />} /> {/* Default route */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

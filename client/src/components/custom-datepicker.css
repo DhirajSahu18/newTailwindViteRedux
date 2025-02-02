@@ -1,0 +1,22 @@
+.dark-calendar {
+    background-color: #222 !important;
+    color: white !important;
+    border: 1px solid #444 !important;
+  }
+  
+  .dark-calendar .react-datepicker__day-name,
+  .dark-calendar .react-datepicker__day,
+  .dark-calendar .react-datepicker__time-name {
+    color: white !important;
+  }
+  
+  .dark-calendar .react-datepicker__day--selected {
+    background-color: #3182ce !important;
+    color: white !important;
+  }
+  
+  .dark-popper {
+    background-color: #222 !important;
+    border: 1px solid #444 !important;
+  }
+  
